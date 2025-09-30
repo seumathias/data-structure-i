@@ -8,7 +8,7 @@ int main(){
 	int random, cont=0;
 	srand(time(NULL));
 	do{
-		random = rand()%202;
+		random = rand()%201;
 		printf(" %d\n", random-100);
 		cont++;
 		}
