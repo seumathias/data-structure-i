@@ -10,15 +10,14 @@ int main() {
         }
          printf("\n");
     }
-    printf("\n\n\n\n");
+    printf("\n\n\n");
     
     //TRIANGLE-1-INVERT
-    for (int i = row; i > 0; i++){
-        for (int j = 0; j >= i; j++){
+    for (int i = row; i > 0; i--){
+        for (int j = 0; j < i; j++){
           printf("*"); 
         }
          printf("\n");
     }
   return 0;
 }
-
