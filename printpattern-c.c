@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 int main() {
-    //TRIANGLE-1
+    //TRIANGLE-LEFT
+    printf("TRIANGLE-1-LEFT\n");
     int row =5;
     for (int i = 0; i < row; i++){
         for (int j = 0; j <= i; j++){
@@ -12,12 +13,27 @@ int main() {
     }
     printf("\n\n\n");
     
-    //TRIANGLE-1-INVERT
+    //TRIANGLE-INVERT-LEFT
+    printf("TRIANGLE-1-INVERT\n");
     for (int i = row; i > 0; i--){
         for (int j = 0; j < i; j++){
           printf("*"); 
         }
          printf("\n");
     }
+    
+    printf("\n\n\n");
+     //TRIANGLE-CENTER
+     printf("TRIANGLE-CENTER\n");
+    for (int i = 0; i < row; i++){
+        for (int j = i ; j < row; j++){
+          printf(" ");
+        }
+        for(int k = 0; k <= i; k++){
+            printf(" *");
+        }
+         printf("\n");
+    }
+    
   return 0;
 }
