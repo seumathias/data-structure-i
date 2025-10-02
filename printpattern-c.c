@@ -7,7 +7,7 @@ int main() {
     int row =5;
     for (int i = 0; i < row; i++){
         for (int j = 0; j <= i; j++){
-          printf("*"); 
+          printf("* "); 
         }
          printf("\n");
     }
@@ -17,14 +17,14 @@ int main() {
     printf("TRIANGLE-1-INVERT\n");
     for (int i = row; i > 0; i--){
         for (int j = 0; j < i; j++){
-          printf("*"); 
+          printf("* "); 
         }
          printf("\n");
     }
     
     printf("\n\n\n");
      //TRIANGLE-CENTER
-     printf("TRIANGLE-1-RIGHT\n");
+     printf("TRIANGLE-CENTER\n");
     for (int i = 0; i < row; i++){
         for (int j = i ; j < row; j++){
           printf(" ");
@@ -36,15 +36,36 @@ int main() {
     }
      printf("\n\n\n");
      //TRIANGLE-RIGHT
-     printf("TRIANGLE-1-RIGHT\n");
+     printf("TRIANGLE-RIGHT\n");
     for (int i = 0; i < row; i++){
+        for (int j = i ; j < row; j++){
+          printf("  ");
+        }
+        for(int k = 0; k <= i; k++){
+            printf("* ");
+        }
+         printf("\n");
+    }
+    //SANDCLOCK
+     printf("HOURGLASS\n");
+    for (int i = row; i >= 0; i--){
         for (int j = i ; j < row; j++){
           printf(" ");
         }
         for(int k = 0; k <= i; k++){
-            printf("*");
+            printf(" *");
+        }
+        printf("\n");
+    }
+    for (int i = 0; i <= row; i++){
+        for (int j = i ; j < row; j++){
+          printf(" ");
+        }
+        for(int k = 0; k <= i; k++){
+            printf(" *");
         }
          printf("\n");
     }
+  return 0;
   return 0;
 }
