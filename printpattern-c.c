@@ -66,6 +66,24 @@ int main() {
         }
          printf("\n");
     }
-  return 0;
+    printf("DIAMOND \n");
+	for (int i = 0; i <= row; i++){
+        for (int j = i ; j < row; j++){
+          printf(" ");
+        }
+        for(int k = 0; k <= i; k++){
+            printf(" *");
+        }
+         printf("\n");
+    }
+    for (int i = row; i >= 0; i--){
+        for (int j = i ; j < row; j++){
+          printf(" ");
+        }
+        for(int k = 0; k <= i; k++){
+            printf(" *");
+        }
+        printf("\n");
+    }
   return 0;
 }
