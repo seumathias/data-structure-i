@@ -85,5 +85,16 @@ int main() {
         }
         printf("\n");
     }
+	printf("RHOMBUS PATTERN \n");
+	for (int i = 0; i < row; i++){
+		for(int k = i; k < row; k++){
+			printf(" ");;
+			}
+		for(int j = 0; j < row; j++){
+			printf(" *");
+			}
+		printf("\n");
+	}
+    
   return 0;
 }
