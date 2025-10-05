@@ -6,8 +6,11 @@ int main(){
 	int num1, num2, contH=0, contP=0,chutePC, adv, maior, menor;
 	srand(time(NULL));
 	num1 = 1 + rand()%100;
-	
+	printf("----------------------------------------------\n");
+	printf("O PC SORTEOU UM NÚMERO\n");
 	printf("Qual o número secreto? de 1 a 100\n");
+	printf("----------------------------------------------\n");
+
 	do{
 	scanf("%d", &num2);
 	if(num2 > num1){
