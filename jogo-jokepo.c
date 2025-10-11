@@ -7,7 +7,6 @@ int main(){
 	do{
 	printf("-----------JOKENPO MELHOR DE 7----------------------\nPLACAR: PC: %d  USER: %d EMPATE: %d\n\n", pontoPC, pontoUser, empate);
 	chutePC = rand()%3 + 1;
-	printf("%d", chutePC);
 	printf("(1) PEDRA\n");
 	printf("(2) TESOURA\n");
 	printf("(3) PAPEL\n");
