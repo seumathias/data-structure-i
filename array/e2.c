@@ -7,12 +7,11 @@ int main(){
 	int naoSorteados[10] = {0};
 	int vet[15] = {0};
 	
+	//SORTEANDO
 	for(int i = 0; i < 25; i++){
 	    sort = rand()%25 + 1;
-	    if(vet[i] == sort){
-	        vet[i] = sort;
-	        continue;
-	       }
+	    if(vet[i] == sort)
+	        vet[i] = rand()%25 + 1;
 		naoSorteados[i] = sort;
 		}
 	
