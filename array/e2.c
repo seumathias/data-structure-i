@@ -1,20 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 int main(){
 	srand(time(NULL));
-	int n;
-	printf("Quantas roladas?\n");
-	scanf("%d", &n);
-	int tent[6] = {0};
+	int sort=0;
+	int naoSorteados[10] = {0};
+	int vet[15] = {0};
 	
-	for(int i = 0; i < n; i++){
-		int dado = rand()%6 + 1;
-		tent[dado -1] += 1;
+	for(int i = 0; i < 25; i++){
+	    sort = rand()%25 + 1;
+	    if(vet[i] == sort){
+	        vet[i] = sort;
+	        continue;
+	       }
+		naoSorteados[i] = sort;
 		}
-	for(int i = 0; i < 6; i++)
-		printf("O dado de lado %d, foi rodado %d vezes, %d por cento das vezes\n", i+1, tent[i], (tent[i]*100)/n);
+	
+	//IMPRIMIR DADOS
+	printf("\nOs números sorteados foram: ");	
+	for (int i = 0; i < 15; i++){
+		 printf("%d, ", vet[i]);
+	}
+	printf("\nOs números não sorteados foram: ");
+	for (int i = 0; i < 10; i++){
+	
+		printf("%d, ", naoSorteados[i]);
+	}
 	return 0;
-}
-
+	}
