@@ -5,8 +5,10 @@
 int main() {
     int n = 50;
     char nomes[n][100];
-    char nomeTemp[100];1
-    int contadorNomes = 0; //CONFERIDOR
+    
+    char nomeTemp[100];
+    
+    int contadorNomes = 0;
 
     printf("Digite os nomes em ordem alfabetica. Digite EXIT para parar.\n");
 
@@ -40,7 +42,7 @@ int main() {
     if (contadorNomes == 0) 
         printf("Nenhum nome foi inserido.\n");
      else {
-        for (int i = 0; i < contador_nomes; i++)
+        for (int i = 0; i < contadorNomes; i++)
             printf("%s\n", nomes[i]);
     }
 
