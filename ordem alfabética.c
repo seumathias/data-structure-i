@@ -5,10 +5,8 @@
 int main() {
     int n = 50;
     char nomes[n][100];
-    
-    char nomeTemp[100];
-    
-    int contadorNomes = 0;
+    char nomeTemp[100];1
+    int contadorNomes = 0; //CONFERIDOR
 
     printf("Digite os nomes em ordem alfabetica. Digite EXIT para parar.\n");
 
@@ -18,12 +16,11 @@ int main() {
         scanf(" %[^\n]s", nomeTemp);
         if (strcmp(nomeTemp, "EXIT") == 0) {
             printf("Fim do programa\n");
-            break;
+            break;}
             else if(strcmp(nomeTemp, "exit")==0){
                 printf("Fim do programa\n");
                 break;
             }
-        }
         //CHECAR SE É O PRIMEIRO
         if (contadorNomes > 0) {
             if (strcmp(nomeTemp, nomes[contadorNomes - 1]) < 0) {
@@ -36,16 +33,15 @@ int main() {
         //COPIAR PARA A STRING NOMES 
         strcpy(nomes[contadorNomes], nomeTemp);
         
-        contador_nomes++;
+        contadorNomes++;
     }
     //IMPRIMINDO    
-    printf("\n--- Nomes Inseridos em Ordem Alfabetica ---\n");
-    if (contador_nomes == 0) {
+    printf("\n--- Nomes ---\n");
+    if (contadorNomes == 0) 
         printf("Nenhum nome foi inserido.\n");
-    } else {
-        for (i = 0; i < contador_nomes; i++) {
+     else {
+        for (int i = 0; i < contador_nomes; i++)
             printf("%s\n", nomes[i]);
-        }
     }
 
     return 0;
