@@ -78,5 +78,15 @@ int main(){
         if(!find)
             printf("[%d]", arr2[i]);
     }
+    
+    //IMPRIMINDO D
+    printf("\nEm comum\n");
+    for(int i = 0; i < y; i++){
+        for(int j = 0; j < x; j++){
+            if(arr1[i] == arr2[j])
+                 printf("[%d]", arr1[i]);
+       }
+    }
+    
     return 0;
 }
