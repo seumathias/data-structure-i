@@ -14,7 +14,7 @@ int main() {
 			int ar[n], valido = 1;
 
 			for (int i = 0; i < n; i++)
-				ar[i] = rand() % (2 * n);
+				ar[i] = rand() % (2 * n + 1);
 
 			for (int i = 0; i < n; i++)	{
 				for (int j = i + 1; j < n; j++) {
