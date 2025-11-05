@@ -56,8 +56,8 @@ int main(){
     printf("\nExclusivos X\n");
     for(int i = 0; i < x; i++){
         int find = 0;
-        for(int j = i+1; j < y; j++){
-            if(arr1[j] == arr2[i]){
+        for(int j = 0; j < y; j++){
+            if(arr1[i] == arr2[j]){
                 find = 1;
                 break;
             }
@@ -69,8 +69,8 @@ int main(){
     printf("\nExclusivos X\n");
     for(int i = 0; i < y; i++){
         int find = 0;
-        for(int j = i+1; j < x; j++){
-            if(arr2[j] == arr1[i]){
+        for(int j = 0; j < x; j++){
+            if(arr2[i] == arr1[j]){
                 find = 1;
                 break;
             }
