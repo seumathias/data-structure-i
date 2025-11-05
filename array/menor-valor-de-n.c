@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define TRIALS 100000
+#define TENTATIVAS 100000
 int main() {
 	srand(time(NULL));
 	int n = 1;
@@ -10,7 +10,7 @@ int main() {
 	// PROGRAMA
 	do {
 	   	int porcentagem = 0;
-		for(int t = 0; t < TRIALS; t++) {
+		for(int t = 0; t < TENTATIVAS; t++) {
 			int ar[n], valido = 1;
 
 			for (int i = 0; i < n; i++)
