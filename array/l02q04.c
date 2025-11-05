@@ -21,7 +21,7 @@ int main(){
     
     int jaSaiu[soma];
     //ALIMENTANDO X
-    for(int i = 0; i < x; i++){
+    for(int i = 0; i < soma; i++){
         jaSaiu[i] = 0;
     }
     for(int i = 0; i < x; i++){
@@ -33,7 +33,7 @@ int main(){
         arr1[i] = num;
     }
     //ALIMENTANDO Y
-    for(int i = 0; i < y; i++){
+    for(int i = 0; i < soma; i++){
         jaSaiu[i] = 0;
     }
     for(int i = 0; i < y; i++){
@@ -66,7 +66,7 @@ int main(){
             printf("[%d]", arr1[i]);
     }
     //IMPRIMINDO C
-    printf("\nExclusivos X\n");
+    printf("\nExclusivos Y\n");
     for(int i = 0; i < y; i++){
         int find = 0;
         for(int j = 0; j < x; j++){
